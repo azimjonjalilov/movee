@@ -1,5 +1,13 @@
-const App = () => {
-  return <div>App</div>;
-};
+import React from 'react'
+import Service from './components/service/Service'
 
-export default App;
+
+function App() {
+  return (
+    <div>
+      <Service/>
+    </div>
+  )
+}
+
+export default App
