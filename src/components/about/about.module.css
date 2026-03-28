@@ -1,0 +1,94 @@
+
+.processSection {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+.processTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px 60px;
+}
+
+.processItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.processNumber {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+  /* Rasmdagi effekt: o'ngga va pastga surilgan sariq soya */
+  text-shadow: 2px 2px 0px #f2c94c; 
+}
+
+.processContent h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.processContent p {
+  margin: 0;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Planshetlar uchun (992px dan kichik) */
+@media (max-width: 992px) {
+  .processGrid {
+    gap: 30px 40px;
+  }
+  .processTitle {
+    font-size: 28px;
+  }
+}
+
+/* Telefonlar uchun (768px dan kichik) */
+@media (max-width: 768px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .processItem {
+    flex-direction: column; 
+    text-align: left;
+    gap: 10px;
+  }
+
+  .processNumber {
+    font-size: 40px;
+  }
+
+  .processTitle {
+    margin-bottom: 30px;
+  }
+}
+
+/* Juda kichik ekranlar uchun (480px dan kichik) */
+@media (max-width: 480px) {
+  .processTitle {
+    font-size: 24px;
+  }
+  .processContent p {
+    font-size: 14px;
+  }
+}
