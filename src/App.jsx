@@ -1,5 +1,10 @@
+import About from './components/about/About'
 const App = () => {
-  return <div>App</div>;
+  return <div>
+    <About>
+      
+    </About>
+  </div>;
 };
 
 export default App;
