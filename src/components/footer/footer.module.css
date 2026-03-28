@@ -1,0 +1,41 @@
+.footer {
+    background-color: #fed100;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DSFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+.DSFlexRow {
+    display: flex;
+    gap: 31px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.listItemWrapper {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    a {
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+}
+.email {
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+}
