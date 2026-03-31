@@ -1,13 +1,22 @@
+
 import React from 'react'
 import Service from './components/service/Service'
+import Footer from "./components/footer/Footer";
+import Header from "./components/Header/Header";
+import About from "./components/about/About";
 
-
-function App() {
+const App = () => {
   return (
     <div>
-      <Service/>
+      <Header />
+      <main>
+        <About />
+       <Service/>
+      </main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
 
 export default App
